@@ -22,7 +22,6 @@ def test():
 
 @app.route("/video", methods=["POST"])
 def videoUpload():
-    # print(request.form["name"])
     print(request.files["file"])
     file = request.files["file"]
     file.save("dosya.mp4")
